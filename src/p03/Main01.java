@@ -45,6 +45,16 @@ public class Main01 {
 		String str06 = "AB+C";
 		System.out.println("AC".matches(str06));
 		System.out.println("ABC.".matches(str06));
+		System.out.println();
+		
+		System.out.println("各カッコ内のハイフン：指定範囲のいずれかの文字");
+		printLine();
+		String str07 = "\\d+"; // 値が半角数字だけで構成されているか
+		System.out.println("".matches(str07));
+		System.out.println("123".matches(str07)); //半角数字のみ
+		System.out.println("12３".matches(str07)	); //全角数字あり
+		System.out.println("123a".matches(str07)); //半角英字
+		
 
 	}
 
